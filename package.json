@@ -4,9 +4,12 @@
   "description": "Final Project for 67-328 - Full Stack",
   "main": "index.js",
   "scripts": {
-    "lite": "lite-server --baseDir ./src",
-    "start": "npm run lite"
+    "dev": "lite-server",
+    "start": "netlify dev"
   },
+  "lite-server": {
+  "open": false
+},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/CMU-67-328/finalproject-client-jennnnn-z.git"
