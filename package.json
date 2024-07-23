@@ -4,12 +4,9 @@
   "description": "Final Project for 67-328 - Full Stack",
   "main": "index.js",
   "scripts": {
-    "dev": "lite-server",
-    "start": "netlify dev"
+    "lite": "lite-server --baseDir ./src",
+    "start": "npm run lite"
   },
-  "lite-server": {
-  "open": false
-},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/CMU-67-328/finalproject-client-jennnnn-z.git"
@@ -26,5 +23,8 @@
   "dependencies": {
     "@deltablot/malle": "^1.0.1",
     "jquery-jeditable": "^2.0.19"
+  },
+  "lite-server": {
+    "open": false
   }
 }
