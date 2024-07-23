@@ -1,4 +1,4 @@
-const url = "https://fullstackfinalproject-b2gn.onrender.com";
+const url = "https://fullstackfinalproject-b2gn.onrender.com/";//"http://localhost:3005/";
 
 var activities = [];
 $(document).ready(function(){
