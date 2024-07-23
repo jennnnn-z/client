@@ -25,12 +25,10 @@
     <h1>Find a thing to do when you are bored!</h1>
     <!-- dropdown menu to choose kind of activity -->
     <!-- <div class="d-flex gap-5 justify-content-center"> -->
-        <div class="dropdown-menu d-block position-static pt-0 mx-0 rounded-3 shadow overflow-hidden w-280px" style="width: 280px;font-size: 14px;">
-            <!-- <form class="p-2 mb-2 bg-light border-bottom">
-            <input type="search" class="form-control" autocomplete="false" placeholder="Type to filter type...">
-            </form> -->
-            <h3 style="opacity: 50%; font-size:20px; margin: .5em;">Type of Activity</h3>
-            <select id="type" style="margin: .5em;">
+    <div class="top-half">
+        <div class="activity-dropdown">
+            <label for="type">Type of Activity</label>
+            <select id="type">
                 <option default value="none">*Optional*</option>
                 <option value="education">Education</option>
                 <option value="recreational">Recreational</option>
@@ -43,9 +41,12 @@
                 <option value="busywork">Busywork</option>
             </select>
         </div>
+        <button id="getactivity">Get an activity!</button>
+    </div>
+    
 
     <br>
-    <button id="getactivity">Click here!</button>
+    
     <br>
     <div id="activity" style="margin:auto;">
         
