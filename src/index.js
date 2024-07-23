@@ -88,7 +88,7 @@ function addFave(key) {
     type: "POST",
     success: (res) => {
       console.log("Success", res);
-      // getAllFaves();
+      getAllFaves();
     },
     error: () => {
       // alert('Already Favorited!');
