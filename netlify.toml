@@ -1,0 +1,2 @@
+[build]
+  publish = "src"  # Adjust this to your static file directory
