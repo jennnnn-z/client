@@ -1,6 +1,6 @@
 body {
   margin:2em 2em 2em 2em;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-family: 'Krona One', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 h1{
@@ -47,16 +47,16 @@ button.edit {
   border-radius: 4px;
 }
 
-.activity-dropdown, #getactivity {
+/* .activity-dropdown, #getactivity {
   margin: 2em 0;
   display: inline-block;
   border: 1px solid #ccc;
   border-radius: 4px;
   box-sizing: border-box;
-}
+} */
 
 .activity-dropdown{
-  display:flex;
+  /* display:flex; */
   padding: 20px;
   justify-content: space-between;
 }
@@ -69,9 +69,33 @@ button.edit {
 .activity-dropdown > select{
   padding: 10px;
   border-radius: 4px;
+  min-width: 100px;
 }
 
-.top-half{
+.title-container{
+  background-color: lightblue;
+  width: 50%;
+  padding: 1em;
+}
+
+main{
   display: flex;
   justify-content: space-between;
+}
+
+.left-half, .right-half{
+  /* display: flex; */
+  /* justify-content: space-between; */
+  border: black solid 1px;
+  padding: 1em;
+  margin-top: 1em;
+  border-radius: 4px;
+}
+
+.left-half{
+  width: 70%;
+}
+
+.right-half{
+  width: 25%;
 }

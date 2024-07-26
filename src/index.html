@@ -22,45 +22,57 @@
 </head>
 
 <body>
-    <h1>Find a thing to do when you are bored!</h1>
+    <div class="title-container">
+        <h1>Activity Generator</h1>
+    </div>
+    <!-- <h1>Find a thing to do when you are bored!</h1> -->
     <!-- dropdown menu to choose kind of activity -->
     <!-- <div class="d-flex gap-5 justify-content-center"> -->
-    <div class="top-half">
-        <div class="activity-dropdown">
-            <label for="type">Type of Activity</label>
-            <select id="type">
-                <option default value="none">*Optional*</option>
-                <option value="education">Education</option>
-                <option value="recreational">Recreational</option>
-                <option value="social">Social</option>
-                <option value="diy">DIY</option>
-                <option value="charity">Charity</option>
-                <option value="cooking">Cooking</option>
-                <option value="relaxation">Relaxation</option>
-                <option value="music">Music</option>
-                <option value="busywork">Busywork</option>
-            </select>
+    <main>
+        <div class="left-half">
+            <div class="activity-dropdown">
+                <label for="type">Type of Activity</label>
+                <select id="type">
+                    <option default value="none">*Optional*</option>
+                    <option value="education">Education</option>
+                    <option value="recreational">Recreational</option>
+                    <option value="social">Social</option>
+                    <option value="diy">DIY</option>
+                    <option value="charity">Charity</option>
+                    <option value="cooking">Cooking</option>
+                    <option value="relaxation">Relaxation</option>
+                    <option value="music">Music</option>
+                    <option value="busywork">Busywork</option>
+                </select>
+            </div>
+            <div class="activity-dropdown">
+                <label for="type">Type of Activity</label>
+                <select id="accessibility">
+                    <option default value="none">*Optional*</option>
+                    <option value="education">Education</option>
+                </select>
+            </div>
+            <button id="getactivity">Get an activity!</button>
         </div>
-        <button id="getactivity">Get an activity!</button>
-    </div>
-    
+        <div id="activity" style="margin:auto;">
+            
+        </div>
 
-    <br>
-    
-    <br>
-    <div id="activity" style="margin:auto;">
+        <!-- <hr> -->
+        <!-- <div id="links" class="right-half">
+            <p>After adding or editing an activity, click Refresh to see updates. </p>
+            <button id="refresh" href="">Refresh Favorites List</button><br>
+        </div><br> -->
+        <div class="right-half">
+            <h2>Favorites</h2>
+            <button id="refresh" href="">Refresh Favorites List</button>
+            <div id="allfaves">
+
+            </div>
+        </div>
         
-    </div>
-
-    <hr>
-    <div id="links">
-        <p>After adding or editing an activity, click Refresh to see updates. </p>
-        <button id="refresh" href="">Refresh Favorites List</button><br>
-    </div><br>
+    </main>
     
-    <div id="allfaves">
-
-    </div>
 
 </body>
 

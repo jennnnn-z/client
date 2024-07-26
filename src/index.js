@@ -35,7 +35,7 @@ $(document).ready(function () {
 function getAllFaves() {
   console.log("getting all faves...");
   $("#allfaves").empty();
-  $("#allfaves").append("<h2>Favorite Activities</h2>");
+  // $("#allfaves").append("<h2>Favorite Activities</h2>");
   $.getJSON(url + "favorites/", (faves) => {
     console.log(faves);
     faves.forEach((fave) => {
