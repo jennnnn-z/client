@@ -14,7 +14,7 @@ h2{
   font-weight: bold;
 }
 button{
-  display: none;
+  /* display: none; */
   border: none;
   background-color: lightblue;
   border-radius: 5px;
@@ -108,8 +108,12 @@ main{
   justify-content: space-between;
 }
 
+.buttons{
+  display: none;
+}
+
 .fave:hover .buttons{
-  display: show;
+  display: inline-block;
 }
 
 .activity{
