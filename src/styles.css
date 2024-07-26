@@ -100,3 +100,8 @@ main{
 .right-half{
   width: 40%;
 }
+
+.fave{
+  display: flex;
+  justify-content: space-between;
+}

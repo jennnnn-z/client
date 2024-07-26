@@ -2,7 +2,7 @@ const url = "https://fullstackfinalproject-b2gn.onrender.com/"; //"http://localh
 
 var activities = [];
 $(document).ready(function () {
-  // getAllFaves();
+  getAllFaves();
   $("#getactivity").click(function () {
     $.getJSON(url + "activity?type=" + type.value, (thing) => {
       $("#activity").empty();
@@ -40,7 +40,7 @@ function getAllFaves() {
     console.log(faves);
     faves.forEach((fave) => {
       $("#allfaves").append(
-        '<div style="display:inline;" id="' +
+        '<div class="fave" id="' +
           fave.key +
           '">' +
           fave.activity +
@@ -49,14 +49,14 @@ function getAllFaves() {
       // $("#allfaves").append("<p><code>data-ma-enter='submit'</code><span data-malleable='true' data-ma-blur='submit'>" + fave.activity + "</span></p>");
       // $("#allfaves").append("<a href=\"#\" id=\"username\" data-type=\"text\" data-pk="1" data-title=\"Enter username\" class=\"editable editable-click\" style=\"display: inline; background-color: rgba(0, 0, 0, 0);\">superuse</a>");
       $("div#" + fave.key).append(
-        '<button class="edit" id="' +
+        '<div class="buttons"><button class="edit" id="' +
           fave.key +
           '"><i class="fa-solid fa-pen-to-square"></i></button>&nbsp;'
       );
       $("div#" + fave.key).append(
         '<button class="delete" id="' +
           fave.key +
-          '"><i class="fa-solid fa-trash"></i></button><br>'
+          '"><i class="fa-solid fa-trash"></i></button></div>'
       );
       $("body").on("click", "button#" + fave.key + ".delete", (t) => {
         console.log("calling DELETE on " + t.currentTarget.id);
