@@ -123,6 +123,7 @@ main{
 
 .activity{
   max-width: 70%;
+  align-self: center;
 }
 
 #allfaves{
