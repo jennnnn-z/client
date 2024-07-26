@@ -42,9 +42,9 @@ function getAllFaves() {
       $("#allfaves").append(
         '<div class="fave" id="' +
           fave.key +
-          '">' +
+          '"><p class="activity">' +
           fave.activity +
-          "&nbsp;</div>"
+          "</p></div>"
       );
       // $("#allfaves").append("<p><code>data-ma-enter='submit'</code><span data-malleable='true' data-ma-blur='submit'>" + fave.activity + "</span></p>");
       // $("#allfaves").append("<a href=\"#\" id=\"username\" data-type=\"text\" data-pk="1" data-title=\"Enter username\" class=\"editable editable-click\" style=\"display: inline; background-color: rgba(0, 0, 0, 0);\">superuse</a>");
