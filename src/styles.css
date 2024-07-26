@@ -112,9 +112,15 @@ main{
   display: none;
 }
 
-.fave:hover .buttons{
-  display: inline-block;
+.fave:hover {
+  background-color: aliceblue;
+  
+  &.buttons{
+    display: inline-block;
+  }
 }
+
+
 
 .activity{
   max-width: 70%;
