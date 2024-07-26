@@ -14,6 +14,7 @@ h2{
   font-weight: bold;
 }
 button{
+  display: none;
   border: none;
   background-color: lightblue;
   border-radius: 5px;
@@ -70,13 +71,14 @@ button.edit {
 .activity-dropdown > select{
   padding: 10px;
   border-radius: 4px;
-  min-width: 100px;
+  width: 7rem;
 }
 
 .title-container{
   background-color: lightblue;
   width: 50%;
   padding: 1em;
+  min-width: 12rem;
 }
 
 main{
@@ -104,6 +106,13 @@ main{
 .fave{
   display: flex;
   justify-content: space-between;
+
+  &:hover{
+    /* buttons with class "buttons" display: show */
+    .buttons{
+      display: block;
+    }
+  }
 }
 
 .activity{
