@@ -15,7 +15,7 @@ $(document).ready(function () {
       $("#activity").append(
         '<button class="tofavorite" id="' +
           thing.key +
-          '">Click to Favorite</button>'
+          '"><i class="fa-regular fa-star"></i></button>'
       );
       $("body").on("click", "#" + thing.key, (t) => {
         console.log("calling POST on " + t.target.id);
