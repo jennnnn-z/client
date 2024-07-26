@@ -51,10 +51,7 @@ function getAllFaves() {
       $("div#" + fave.key).append(
         '<div class="buttons"><button class="edit" id="' +
           fave.key +
-          '"><i class="fa-solid fa-pen-to-square"></i></button>&nbsp;'
-      );
-      $("div#" + fave.key).append(
-        '<button class="delete" id="' +
+          '"><i class="fa-solid fa-pen-to-square"></i></button>&nbsp;<button class="delete" id="' +
           fave.key +
           '"><i class="fa-solid fa-trash"></i></button></div>'
       );
