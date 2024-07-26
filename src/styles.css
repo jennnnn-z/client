@@ -109,3 +109,7 @@ main{
 .activity{
   max-width: 70%;
 }
+
+#allfaves{
+  padding-top: .5rem;
+}
