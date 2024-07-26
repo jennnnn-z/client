@@ -106,7 +106,7 @@ main{
 .fave{
   display: flex;
   justify-content: space-between;
-  min-height:1.5rem;
+  min-height:2rem;
 }
 
 .buttons{
