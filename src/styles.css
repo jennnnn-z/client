@@ -106,13 +106,10 @@ main{
 .fave{
   display: flex;
   justify-content: space-between;
+}
 
-  &:hover{
-    /* buttons with class "buttons" display: show */
-    .buttons{
-      display: block;
-    }
-  }
+.fave:hover .buttons{
+  display: show;
 }
 
 .activity{
